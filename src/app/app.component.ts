@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'park-front';
+
+
+  isAuthenticated(): boolean {
+    return !!localStorage.getItem('token'); // Retorna true se o token estiver presente
+  }
 }
